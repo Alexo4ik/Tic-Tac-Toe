@@ -1,0 +1,75 @@
+.wrapper {
+    min-height: 100vh;
+    width: 100%;
+    background: linear-gradient(-45deg, #f5046100, #d103f5, #04f6f6, #fd1c1c);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+@keyframes gradient {
+    0% {
+    background-position: 0% 50%;
+    }
+    50% {
+    background-position: 100% 50%;
+    }
+    100% {
+    background-position: 0% 50%;
+    }
+}
+
+.start__btn {
+    width: 300px;
+    height: 50px;
+    margin-bottom: 30px;
+    cursor: pointer;
+    outline: none;
+    background: linear-gradient(-180deg, #bd04f500, rgb(3, 221, 245), #24f604, #fda31c);
+    background-size: 400% 400%;
+    animation: btn 10s ease infinite;
+    background-repeat: no-repeat;
+    border: 1px solid black;
+    border-radius: 10px;
+    font-size: 24px;
+}
+
+@keyframes btn {
+    0% {
+    background-position: 0% 50%;
+    }
+    50% {
+    background-position: 100% 50%;
+    }
+    100% {
+    background-position: 0% 50%;
+    }
+}
+
+.start__btn:hover {
+    background: #fff;
+    transition: .3s all ease;
+}
+
+.game__info {
+    margin-top: 30px;
+    font-size: 36px;
+    color:black;
+}
+
+.WinCounter {
+    position: absolute;
+    top: 50%;
+    left: 5%;
+    font-size: 50px;
+    translate: 0 -50%;
+}
+
+.WinCounter:last-of-type {
+    left: unset;
+    right: 5%;
+}

@@ -1,0 +1,32 @@
+.square {
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(-270deg, #f771a4, #df6ff3, #6ff3f3, #f4e548);
+    background-size: 400% 400%;
+    animation: squ 15s ease infinite;
+    background-repeat: no-repeat;
+    border: 2px solid black;
+    cursor: pointer;
+    outline: none;
+    font-size: 60px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes squ {
+    0% {
+   background-position: 0% 50%;
+   }
+   50% {
+   background-position: 100% 50%;
+   }
+   100% {
+   background-position: 0% 50%;
+   }
+}
+
+.square:hover {
+    background: rgb(249, 247, 249);
+    transition: .3s all ease;
+}
